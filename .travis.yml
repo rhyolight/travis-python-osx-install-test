@@ -1,10 +1,11 @@
-os: osx
+os: 
+  - osx
+
 language: python
 python:
   - "2.7"
 
 before_install:
-  - echo "python before install:"
   - which python
 
 install:
@@ -13,5 +14,4 @@ install:
   - sudo installer -pkg python-2.7.9-macosx10.6.pkg -target /
 
 script:
-  - echo "python after install:"
   - which python
